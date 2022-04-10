@@ -13,13 +13,13 @@ $large: 1024px;
 $xtra-large: 1600px;
 
 h1 {
-  font-size: 40px;
+  font-size: $heading-one;
 }
 h2 {
-  font-size: 32px;
+  font-size: $heading-two;
 }
 h3 {
-  font-size: 24px;
+  font-size: $heading-three;
 }
 
 * {
@@ -103,5 +103,27 @@ body {
     gap: 20px;
     width: 70%;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .data {
+    display: flex;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+  .card {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 16px;
+    }
   }
 }

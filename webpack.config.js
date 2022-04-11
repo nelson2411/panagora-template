@@ -12,6 +12,10 @@ module.exports = (_, argv) => {
       template: "./src/index.html",
       inject: false,
     }),
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
   ];
 
   if (!isDev) {

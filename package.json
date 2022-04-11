@@ -8,6 +8,7 @@
     "build": "webpack --mode=production"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "handlebars": "^4.7.7",
     "mustache": "^4.2.0",
     "svg-inline-loader": "^0.8.2"

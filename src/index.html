@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./product.bundle.js"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
     <%= htmlWebpackPlugin.tags.headTags %>
   </head>
   <body>
     <%= htmlWebpackPlugin.tags.bodyTags %>
     <div class="myLogo">
-      <img id="panaLogo" alt="panagora logo" />
+      <img class="panaLogo" id="panaLogo" alt="panagora logo" />
     </div>
     <div class="links">
       <a><h3>Products</h3></a>
@@ -19,7 +20,7 @@
     <div class="data">
       <div id="myData" class="data__grid"></div>
     </div>
-
-    <script src="/src/index.js" type="module"></script>
+    e
+    <script src="/src/index.bundle.js" type="module"></script>
   </body>
 </html>

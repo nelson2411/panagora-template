@@ -15,6 +15,7 @@ module.exports = (_, argv) => {
     new HtmlWebpackPlugin({
       filename: "product.html",
       template: "./src/product.html",
+      inject: false,
     }),
   ];
 
@@ -38,10 +39,13 @@ module.exports = (_, argv) => {
   return {
     plugins,
     mode: argv.mode,
-    entry: "./src/index.js",
+    entry: {
+      index: "./src/index.js",
+      product: "./src/product.js",
+    },
     output: {
       path: path.resolve(__dirname, "build"),
-      filename: "[name].[contenthash].js",
+      filename: "[name].bundle.js",
       chunkFilename: "[id].[chunkhash].js",
     },
     devServer: {
